@@ -1,0 +1,14 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Redcode.Models;
+
+namespace Redcode.Data;
+
+    public class AppDbContext : DbContext
+    {
+       public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+        }
+       public DbSet<Book> Books { get; set; }
+       public DbSet<Quote> Quotes { get; set; }
+       public DbSet<User> Users { get; set; }
+}

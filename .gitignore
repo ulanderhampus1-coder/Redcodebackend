@@ -1,0 +1,14 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build output
+bin/
+obj/
+
+# Local development settings
+appsettings.Development.json
+
+# Local database
+Redcode/bookquote.db

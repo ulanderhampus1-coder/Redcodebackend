@@ -1,0 +1,23 @@
+@Redcode_HostAddress = http://localhost:5073
+###
+GET {{Redcode_HostAddress}}/api/Books
+Accept: application/json
+###
+POST {{Redcode_HostAddress}}/api/Books
+Content-Type: application/json
+
+###
+PUT {{Redcode_HostAddress}}/api/Books/1
+Content-Type: application/json
+
+###
+DELETE {{Redcode_HostAddress}}/api/Books/1
+
+{
+  "id": 1,
+  "titel": "Harry Potter",
+  "författare": "J.K. Rowling",
+  "datum": "1997-06-26"
+}
+
+
